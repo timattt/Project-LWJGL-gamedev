@@ -1,0 +1,22 @@
+FOV:1.5707964
+Render range:300.0
+vsync enabled:false
+mipmapping enabled:true
+target FPS:80
+print FPS enabled:false
+face culling enabled:false
+antialiasing enabled:true
+full screen enabled:false
+pring sound log:false
+enabled shadows:true
+compatible profile:true
+light debug enabled:false
+context version minor:3
+context version major:3
+directional light total splits:3
+split 0:10.0
+split resolution:2048:2048
+split 1:30.0
+split resolution:1024:1024
+split 2:50.0
+split resolution:1024:1024

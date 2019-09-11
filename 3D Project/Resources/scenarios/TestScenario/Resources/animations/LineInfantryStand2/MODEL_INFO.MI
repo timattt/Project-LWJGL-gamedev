@@ -1,0 +1,12 @@
+Name{LineInfantryStand2}
+Chunked{25}
+FramesQuantity{4}
+Frame1path{/Frames/Frame1.obj}
+Frame1duration{3000}
+Frame2path{/Frames/Frame2.obj}
+Frame2duration{3000}
+Frame3path{/Frames/Frame3.obj}
+Frame3duration{3000}
+Frame4path{/Frames/Frame4.obj}
+Frame4duration{3000}
+Author{timattt}

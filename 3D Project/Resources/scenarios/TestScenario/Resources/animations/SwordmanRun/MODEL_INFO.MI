@@ -1,0 +1,10 @@
+Name{SwordmanRun}
+Chunked{30}
+FramesQuantity{3}
+Frame1path{/Frame1.obj}
+Frame1duration{250}
+Frame2path{/Frame2.obj}
+Frame2duration{250}
+Frame3path{/Frame3.obj}
+Frame3duration{250}
+Author{timattt}

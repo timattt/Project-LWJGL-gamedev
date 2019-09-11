@@ -1,0 +1,8 @@
+Name{DestinationSelector}
+Chunked{20}
+FramesQuantity{2}
+Frame1path{/Frames/frame1.obj}
+Frame1duration{5000}
+Frame2path{/Frames/frame2.obj}
+Frame2duration{0}
+Author{timattt}

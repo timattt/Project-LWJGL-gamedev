@@ -1,0 +1,12 @@
+Name{SwordmanAttack}
+Chunked{30}
+FramesQuantity{4}
+Frame1path{/F1.obj}
+Frame1duration{466}
+Frame2path{/F2.obj}
+Frame2duration{156}
+Frame3path{/F3.obj}
+Frame3duration{133}
+Frame4path{/F4.obj}
+Frame4duration{245}
+Author{timattt}

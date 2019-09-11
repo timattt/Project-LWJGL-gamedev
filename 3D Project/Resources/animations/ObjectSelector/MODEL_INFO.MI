@@ -1,0 +1,8 @@
+Name{ObjectSelector}
+Chunked{}
+FramesQuantity{2}
+Frame1path{/Frames/frame1.obj}
+Frame1duration{3000}
+Frame2path{/Frames/frame2.obj}
+Frame2duration{3000}
+Author{timattt}
