@@ -16,6 +16,7 @@ public class GameOptions extends Options {
 	private boolean day_night_cycle_enabled = true;
 	private int tile_cuts = 1;
 	private boolean disableVisibility = false;
+	private boolean areUnitsOrthogonalToTiles = false;
 
 	public GameOptions() {
 	}
@@ -47,6 +48,9 @@ public class GameOptions extends Options {
 		
 		writer.write("visibility disabled:" + Boolean.toString(disableVisibility));
 		writer.newLine();
+		
+		writer.write("units orthogonal to tiles:" + Boolean.toString(areUnitsOrthogonalToTiles));
+		writer.newLine();
 
 		writer.flush();
 		writer.close();
@@ -66,6 +70,7 @@ public class GameOptions extends Options {
 			day_night_cycle_enabled = Boolean.parseBoolean(cutComments(reader.readLine()));
 			tile_cuts = Integer.parseInt(cutComments(reader.readLine()));
 			disableVisibility = Boolean.parseBoolean(cutComments(reader.readLine()));
+			areUnitsOrthogonalToTiles = Boolean.parseBoolean(cutComments(reader.readLine()));
 			
 			reader.close();
 		}
@@ -107,17 +112,14 @@ public class GameOptions extends Options {
 		return tile_cuts;
 	}
 
+	public boolean isAreUnitsOrthogonalToTiles() {
+		return areUnitsOrthogonalToTiles;
+	}
+
 	public final boolean isDisableVisibility() {
 		return disableVisibility;
 	}
 
-	@Override
-	public String toString() {
-		return "GameOptions [map_grid=" + map_grid + ", cameraFromGround=" + cameraFromGround
-				+ ", camera_bounded_to_terrain=" + camera_bounded_to_terrain + ", day_night_cycle_enabled="
-				+ day_night_cycle_enabled + ", tile_cuts=" + tile_cuts + ", disableVisibility=" + disableVisibility
-				+ "]";
-	}
 
 
 }

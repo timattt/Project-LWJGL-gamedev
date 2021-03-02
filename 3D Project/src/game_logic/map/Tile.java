@@ -8,6 +8,8 @@ import org.joml.Vector2f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 
+import engine.Engine;
+import game_logic.GameOptions;
 import game_logic.tile_object.Combatable;
 import game_logic.tile_object.Movable;
 import game_logic.tile_object.TileObject;
@@ -189,38 +191,41 @@ public class Tile {
 		return i + 2;
 	}
 
-	public Quaternionf createQuaternion(Vector2f scalarPos) {/*
-		int n = TileSizeHandler.instance.getTileCuts();
-		float transfX = (scalarPos.x + 1f) / 2f;
-		float transfY = (scalarPos.y + 1f) / 2f;
-		int x = (int) (transfX * (float) (n + 1));
-		int z = (int) (transfY * (float) (n + 1));
-		int side = (transfX % (1f / (float) (1 + n)) > transfY % (1f / (float) (1 + n))) ? 0 : 1;
-		Quaternionf val = quaternions[x][z][side];
-		return val != null ? new Quaternionf(val) : new Quaternionf();
-	*/
-		return new Quaternionf();
+	public Quaternionf createQuaternion(Vector2f scalarPos) {
+		if (((GameOptions) Engine.getExternalOptions()).isAreUnitsOrthogonalToTiles()) {
+			int n = TileSizeHandler.instance.getTileCuts();
+			float transfX = (scalarPos.x + 1f) / 2f;
+			float transfY = (scalarPos.y + 1f) / 2f;
+			int x = (int) (transfX * (float) (n + 1));
+			int z = (int) (transfY * (float) (n + 1));
+			int side = (transfX % (1f / (float) (1 + n)) > transfY % (1f / (float) (1 + n))) ? 0 : 1;
+			Quaternionf val = quaternions[x][z][side];
+			return val != null ? new Quaternionf(val) : new Quaternionf();
+		} else {
+			return new Quaternionf();
+		}
 	}
 
 	Quaternionf createQuaternion(Vector3f scalarPos) {
-		/*
-		int n = TileSizeHandler.instance.getTileCuts();
-		Vector3f a = new Vector3f(scalarPos);
-		a.negate();
-		a.add(p1);
-		a.negate();
-		int x = (int) (a.x / TileSizeHandler.instance.getTileSize() * (n + 1));
-		int z = (int) (a.z / TileSizeHandler.instance.getTileSize() * (n + 1));
-		int side = ((a.x % TileSizeHandler.instance.getTileSubquadSide()) > (a.z
-				% TileSizeHandler.instance.getTileSubquadSide())) ? 0 : 1;
-		try {
-			Quaternionf val = quaternions[x][z][side];
-			return (val == null ? new Quaternionf() : val);
-		} catch (Exception e) {
+		if (((GameOptions) Engine.getExternalOptions()).isAreUnitsOrthogonalToTiles()) {
+			int n = TileSizeHandler.instance.getTileCuts();
+			Vector3f a = new Vector3f(scalarPos);
+			a.negate();
+			a.add(p1);
+			a.negate();
+			int x = (int) (a.x / TileSizeHandler.instance.getTileSize() * (n + 1));
+			int z = (int) (a.z / TileSizeHandler.instance.getTileSize() * (n + 1));
+			int side = ((a.x % TileSizeHandler.instance.getTileSubquadSide()) > (a.z
+					% TileSizeHandler.instance.getTileSubquadSide())) ? 0 : 1;
+			try {
+				Quaternionf val = quaternions[x][z][side];
+				return (val == null ? new Quaternionf() : val);
+			} catch (Exception e) {
+				return new Quaternionf();
+			}
+		} else {
 			return new Quaternionf();
 		}
-		*/
-		return new Quaternionf();
 	}
 
 	/**
@@ -271,10 +276,8 @@ public class Tile {
 	/**
 	 * Tests if the given ray intersects with this tile
 	 * 
-	 * @param origin
-	 *            : Ray origin
-	 * @param dir
-	 *            : Ray direction
+	 * @param origin : Ray origin
+	 * @param dir    : Ray direction
 	 * @return : True if intersects
 	 */
 	public boolean intersectsRay(Vector3f origin, Vector3f dir) {
@@ -286,8 +289,7 @@ public class Tile {
 	/**
 	 * Returns length between tile center and given vector.
 	 * 
-	 * @param origin
-	 *            : Given vector
+	 * @param origin : Given vector
 	 * @return : Length
 	 */
 	public float getLength(Vector3f origin) {
@@ -312,8 +314,7 @@ public class Tile {
 	/**
 	 * Finds enemy for given Combatable object.
 	 * 
-	 * @param comb
-	 *            : Object
+	 * @param comb : Object
 	 * @return : Enemy if this tiles contains such or null.
 	 */
 	public Combatable getEnemy(Combatable comb) {
@@ -328,8 +329,7 @@ public class Tile {
 	/**
 	 * Checks if this tile contains some objects that do not allow to step on them.
 	 * 
-	 * @param o
-	 *            : Object to check
+	 * @param o : Object to check
 	 * @return : True if there is no such objects
 	 */
 	public <T extends TileObject & Movable> boolean isWalkable(T o) {

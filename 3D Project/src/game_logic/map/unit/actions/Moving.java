@@ -82,7 +82,7 @@ public class Moving extends UnitAction {
 			Quaternionf y_rot = new Quaternionf();
 
 			float angle = new Vector2f(dir.x, dir.z).angle(TileObject.BASE_DIRECTION);
-
+			
 			y_rot.fromAxisAngleRad(new Vector3f(0, 1, 0), angle);
 
 			for (Decoration dec : subjects[sub_i].collectDecorations(this.getClass())) {
@@ -103,8 +103,13 @@ public class Moving extends UnitAction {
 				dec.setPosition(final_pos);
 
 				// Rotating to tile plane
+				// old way
+				/*
 				rot = getMap().createRotation(final_pos);
 				rot.rotateY(angle);
+				*/
+				rot = new Quaternionf().rotateY(angle);
+				rot.mul(getMap().createRotation(final_pos));
 				dec.rotate(rot);
 			}
 

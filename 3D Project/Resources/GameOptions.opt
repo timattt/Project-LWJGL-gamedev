@@ -2,5 +2,6 @@ map grid enabled:true
 camera from ground length:5.0
 camera bounded to terrain:false
 day night cycle enabled:true
-tile cuts:2
-visibility disabled:true
+tile cuts:0
+visibility disabled:false
+units orthogonal to tiles:true
