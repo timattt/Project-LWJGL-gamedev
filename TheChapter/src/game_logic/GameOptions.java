@@ -18,6 +18,7 @@ public class GameOptions extends Options {
 	private boolean disableVisibility = false;
 	private boolean areUnitsOrthogonalToTiles = false;
 	private boolean flatternTerrain = false;
+	private boolean useTextureForPlains = false;
 	
 	public GameOptions() {
 	}
@@ -55,6 +56,9 @@ public class GameOptions extends Options {
 		
 		writer.write("flattern terrain:" + Boolean.toString(flatternTerrain));
 		writer.newLine();
+		
+		writer.write("use texture for plains:" + Boolean.toString(useTextureForPlains));
+		writer.newLine();
 
 		writer.flush();
 		writer.close();
@@ -76,6 +80,7 @@ public class GameOptions extends Options {
 			disableVisibility = Boolean.parseBoolean(cutComments(reader.readLine()));
 			areUnitsOrthogonalToTiles = Boolean.parseBoolean(cutComments(reader.readLine()));
 			flatternTerrain = Boolean.parseBoolean(cutComments(reader.readLine()));
+			useTextureForPlains = Boolean.parseBoolean(cutComments(reader.readLine()));
 			
 			reader.close();
 		}
@@ -115,6 +120,10 @@ public class GameOptions extends Options {
 
 	public final void setDay_night_cycle_enabled(boolean day_night_cycle_enabled) {
 		this.day_night_cycle_enabled = day_night_cycle_enabled;
+	}
+
+	public boolean isUseTextureForPlains() {
+		return useTextureForPlains;
 	}
 
 	public final int getTile_cuts() {

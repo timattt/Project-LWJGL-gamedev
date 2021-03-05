@@ -92,7 +92,7 @@ public final class TileMapMesh extends Mesh implements ExternalRenderer {
 
 	// Color map
 	private static final Vector3f[] colors = new Vector3f[] { new Vector3f(0, 0.2f, 0), new Vector3f(1, 1, 1) };
-	private static final float[] heights = new float[] { 0f, 10f };
+	private static final float[] heights = new float[] { 0f, 1f };
 
 	// Map
 	private final Map map;

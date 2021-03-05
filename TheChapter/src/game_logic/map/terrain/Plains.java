@@ -1,5 +1,7 @@
 package game_logic.map.terrain;
 
+import engine.Engine;
+import game_logic.GameOptions;
 import game_logic.map.Tile;
 import game_logic.storage.Textures;
 import graphicsSupport.mesh.Mesh;
@@ -17,7 +19,9 @@ public class Plains extends Terrain {
 	@Override
 	public void registerToTile(Tile homeTile) {
 		super.registerToTile(homeTile);
-		homeMap.setTextureToTileMapMesh(Textures.PLAINS_TERRAIN, homeTile);
+		if (((GameOptions) Engine.getExternalOptions()).isUseTextureForPlains()) {
+			homeMap.setTextureToTileMapMesh(Textures.PLAINS_TERRAIN, homeTile);
+		}
 	}
 
 	@Override
@@ -27,7 +31,9 @@ public class Plains extends Terrain {
 
 	@Override
 	public void removeFromTile(Tile homeTile) {
-		homeMap.removeTextureFromTileMapMesh(Textures.PLAINS_TERRAIN, this.homeTile);
+		if (((GameOptions) Engine.getExternalOptions()).isUseTextureForPlains()) {
+			homeMap.removeTextureFromTileMapMesh(Textures.PLAINS_TERRAIN, this.homeTile);
+		}
 		super.removeFromTile(homeTile);
 	}
 
@@ -40,6 +46,5 @@ public class Plains extends Terrain {
 	public boolean staticVisibility() {
 		return true;
 	}
-
 
 }
