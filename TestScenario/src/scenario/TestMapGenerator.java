@@ -74,7 +74,7 @@ public class TestMapGenerator extends MapGenerator {
 			}
 		}
 
-		for (int i = 0; i < 6; i++)
+		for (int i = 0; i < 1; i++)
 			map.registerTileObject(new LineInfantry(), 10 + i, 10, teams.getFirst());
 
 		for (int i = 0; i < 1; i++)
