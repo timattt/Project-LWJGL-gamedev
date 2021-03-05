@@ -17,7 +17,8 @@ public class GameOptions extends Options {
 	private int tile_cuts = 1;
 	private boolean disableVisibility = false;
 	private boolean areUnitsOrthogonalToTiles = false;
-
+	private boolean flatternTerrain = false;
+	
 	public GameOptions() {
 	}
 
@@ -51,6 +52,9 @@ public class GameOptions extends Options {
 		
 		writer.write("units orthogonal to tiles:" + Boolean.toString(areUnitsOrthogonalToTiles));
 		writer.newLine();
+		
+		writer.write("flattern terrain:" + Boolean.toString(flatternTerrain));
+		writer.newLine();
 
 		writer.flush();
 		writer.close();
@@ -71,9 +75,14 @@ public class GameOptions extends Options {
 			tile_cuts = Integer.parseInt(cutComments(reader.readLine()));
 			disableVisibility = Boolean.parseBoolean(cutComments(reader.readLine()));
 			areUnitsOrthogonalToTiles = Boolean.parseBoolean(cutComments(reader.readLine()));
+			flatternTerrain = Boolean.parseBoolean(cutComments(reader.readLine()));
 			
 			reader.close();
 		}
+	}
+
+	public boolean isFlatternTerrain() {
+		return flatternTerrain;
 	}
 
 	public final boolean isMap_grid() {
