@@ -1,6 +1,7 @@
 package game_logic.map.terrain;
 
 import game_logic.map.Tile;
+import game_logic.storage.Textures;
 import graphicsSupport.mesh.Mesh;
 
 public class Plains extends Terrain {
@@ -16,7 +17,7 @@ public class Plains extends Terrain {
 	@Override
 	public void registerToTile(Tile homeTile) {
 		super.registerToTile(homeTile);
-		//homeMap.setTextureToTileMapMesh(Textures.PLAINS_TERRAIN, homeTile);
+		homeMap.setTextureToTileMapMesh(Textures.PLAINS_TERRAIN, homeTile);
 	}
 
 	@Override
@@ -26,7 +27,7 @@ public class Plains extends Terrain {
 
 	@Override
 	public void removeFromTile(Tile homeTile) {
-		//homeMap.removeTextureFromTileMapMesh(Textures.PLAINS_TERRAIN, this.homeTile);
+		homeMap.removeTextureFromTileMapMesh(Textures.PLAINS_TERRAIN, this.homeTile);
 		super.removeFromTile(homeTile);
 	}
 
