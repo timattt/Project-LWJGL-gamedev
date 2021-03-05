@@ -60,7 +60,7 @@ public abstract class MapGenerator {
 				Color col = new Color(map.getRGB(stepX * x, stepY * y));
 
 				float val = (float) (col.getRed() + col.getGreen() + col.getBlue()) / (256f * 3f) * getMaxHeight();
-
+				
 				out[x][y] = val;
 
 				if (((GameOptions) Engine.getExternalOptions()).isFlatternTerrain()) {
