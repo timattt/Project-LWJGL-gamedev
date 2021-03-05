@@ -29,7 +29,7 @@ The chapter - пошаговая стратегия по своим механи
 ## Юниты
 юнит - это группа людей, которых игрок может двигать по карте и выполнять с их помощью различные действия. Например, отряд стрелков считается одним юнитом.   
 **Вот юнит игрока выделен, красным отмечен радиус стрельбы**
-  ![]("https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example2.png")
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example2.png)
 **Вот юнит двигается**
 
 ## Сценарии
@@ -44,5 +44,5 @@ The chapter - пошаговая стратегия по своим механи
 инструменты для обработки и добавления. Так что для создания нового контента вам достаточно унаследовать свой класс от нужного.
 
 * TileObject (объекты, которые расположены на карте)
- ![]("https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/TileObjectStructure.png")
+ ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/TileObjectStructure.png)
 
