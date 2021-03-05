@@ -135,7 +135,7 @@ public class GameProcess implements Runnable, EventsBundle, EventsCreator {
 		sendPremise(delegates, map, Events.PREMISE_NEW_MAP);
 		this.map = map;
 
-		map.getTeams().get(playerTeamNumber).getPlayers().clear();
+		//map.getTeams().get(playerTeamNumber).getPlayers().clear();
 		map.boundToTeam(map.getTeams().get(playerTeamNumber));
 
 		Human.instance.registerToTeam(map.getTeams().get(playerTeamNumber));
