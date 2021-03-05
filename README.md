@@ -1,6 +1,6 @@
 # LWJGL game-dev
 В этом репозитории располагается мой самый большой game-dev проект.  
-The chapter - пошаговая стратегия по своим механикам похожая на серию игр Civilization и Humankind
+The chapter - пошаговая стратегия по своим механикам похожая на серию игр Civilization и Humankind.
 ### Код разделен на 3 части:
 * движок (оболочка над LWJGL с удобной системой создания объектов, прорисовкой, управления системными объектами и т.д.)
 * The chapter (собственно сама игра, для работы необходимо подключить движок)
@@ -27,13 +27,58 @@ The chapter - пошаговая стратегия по своим механи
 
 # Основные игровые механики
 ## Юниты
-юнит - это группа людей, которых игрок может двигать по карте и выполнять с их помощью различные действия. Например, отряд стрелков считается одним юнитом.   
+Юнит - это группа "людей", которых игрок может двигать по карте и выполнять с их помощью различные действия. Например, отряд стрелков считается одним юнитом.   
 **Вот юнит игрока выделен, красным отмечен радиус стрельбы**
-<kbd>
-  <img src="https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example2.png">
-</kbd>
-**Вот юнит двигается**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example2.png)
+Теперь посмотрим, что могут делать юниты.   
+**Тут юнит двигается**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example3.png)
+**А тут два юнита перестреливаются**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example4.png)
+**Здесь видна анимация у юнита сразу после сражения**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example5.png)
+До этого мы видели юнит линейной пехоты, он пренадлежит к классу стрелков, но есть еще и юниты ближнего боя, посмотрим их.   
+**А вот юнит ближнего боя - мечник**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example6.png)
+**Кстати, можно легко менять колличество человечков, которые отображаются**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example7.png)
+**А вот большая баталия**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Unit_example8.png)
+## Ландшафт
+Помимо ровной карты можно сделать холмистую, гористую и вообще какую мы захотим, ибо есть встроенная система height-map. И колличество полигонов в одной клетке регулируется. А также можно установить цвет или комбинацию цветов для карты.     
+**Пейзаж 1**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Terrain_example1.png)
+  Теперь больше будет полигонов.   
+**Пейзаж 2**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Terrain_example2.png)
+Включим цветовую интерполяцию.   
+**Пейзаж 3**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Terrain_example3.png)
 
+## Поселения
+Еще одна глобальная механика - поселения.
+Теперь у нас на карте есть города, которые могут расширяться и производить всякие ресурсы.   
+**Вот так выглядит центральный район города**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Settlement_example1.png)
+Давайте расширим город - построим район.   
+**Открываем GUI города**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Settlement_example2.png)
+**Нажимаем кнопку - попадаем в вид сверху - выбираем клетку для нового района**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Settlement_example3.png)
+Отлично, а теперь мы хотим построить в новом районе домик. Чтобы город производил больше полезных ресурсов.   
+**Открываем панель строительства зданий - выбираем**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Settlement_example4.png)
+**Начинаем строить - слева показывается скорость строительства**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Settlement_example5.png)
+Осталось только добавить побольше структур внутри города - фабрики, стены и т.д.
+  
+## Карточки
+Еще одна механика - система карточек.
+У каждого игрока есть некоторый набор игровых карточек, которые можно "кинуть" на какую-нибудь клетку и карточка сделает что-нибудь.
+Идея экспериментальная, но весь необходимый функционал уже есть.   
+**Вот карточка уже лежит**
+  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/Card_example.png)
+  
 ## Сценарии
 Сценарий состоит из генератора карты, объектов на карте, набора игровых правил.
 Т.е. сама игра по умолчанию никакого игрового контента не имеет (кроме нескольких основных механик), все лежит в сценарии.
@@ -46,6 +91,5 @@ The chapter - пошаговая стратегия по своим механи
 инструменты для обработки и добавления. Так что для создания нового контента вам достаточно унаследовать свой класс от нужного.
 
 * TileObject (объекты, которые расположены на карте)
-<kbd>
-  <img src="https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/TileObjectStructure.png">
-</kbd>
+ ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/TileObjectStructure.png)
+
