@@ -1,0 +1,6 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl {Tree_mat}
+Ns 1
+map_Kd tree-576847_960_720.png
