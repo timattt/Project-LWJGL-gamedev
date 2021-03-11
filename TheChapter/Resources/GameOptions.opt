@@ -3,7 +3,7 @@ camera from ground length:5.0
 camera bounded to terrain:false
 day night cycle enabled:true
 tile cuts:7
-visibility disabled:false
+visibility disabled:true
 units orthogonal to tiles:false
 flattern terrain:false
 use texture for plains:false
