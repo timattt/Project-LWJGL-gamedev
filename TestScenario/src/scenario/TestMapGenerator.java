@@ -21,7 +21,7 @@ import scenario.stuf.LineInfantry;
 public class TestMapGenerator extends MapGenerator {
 
 	// Size
-	private static final Vector2i size = new Vector2i(30, 30);
+	private static final Vector2i size = new Vector2i(15, 15);
 
 	private LinkedList<Team> teams;
 
@@ -74,6 +74,7 @@ public class TestMapGenerator extends MapGenerator {
 		}
 
 		map.registerTileObject(new LineInfantry(), 5, 5, teams.getFirst());
+		map.registerTileObject(new LineInfantry(), 8, 5, teams.getLast());
 
 		// Trees
 		for (int i = 0; i < 100; i++) {
