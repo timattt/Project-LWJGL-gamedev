@@ -2,8 +2,8 @@ map grid enabled:true
 camera from ground length:5.0
 camera bounded to terrain:false
 day night cycle enabled:true
-tile cuts:1
+tile cuts:7
 visibility disabled:false
 units orthogonal to tiles:false
-flattern terrain:true
-use texture for plains:true
+flattern terrain:false
+use texture for plains:false

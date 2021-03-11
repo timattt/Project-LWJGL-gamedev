@@ -20,7 +20,7 @@ public class LineInfantry extends RangeMilitaryUnit {
 
 	@Override
 	public int getVisibleRange() {
-		return 4;
+		return 3;
 	}
 
 	@Override
