@@ -72,5 +72,3 @@ The chapter - пошаговая стратегия по своим механи
 * TileObject (объекты, которые расположены на карте)
  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/TileObjectStructure.png)
 
-# Гифки
-<img src="https://s4.gifyu.com/images/AI_BATTLE.gif" width="40" height="40" />
