@@ -73,5 +73,4 @@ The chapter - пошаговая стратегия по своим механи
  ![](https://github.com/timattt/LWJGL-Programming-timattt/blob/master/imgs/TileObjectStructure.png)
 
 # Гифки
-
-![AI_BATTLE.gif](https://s4.gifyu.com/images/AI_BATTLE.gif)](https://gifyu.com/image/fVUQ)
+<img src="https://s4.gifyu.com/images/AI_BATTLE.gif" width="40" height="40" />
