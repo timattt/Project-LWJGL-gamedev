@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="TheChapter">
+    <property environment="env"/>
+    <property name="TestScenario.location" value="../TestScenario"/>
+    <property name="Engine.location" value="../3D Engine"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="LWJGL.userclasspath">
+        <pathelement location="../Libs/joml-1.10.2.jar"/>
+        <pathelement location="../Libs/lwjgl.jar"/>
+        <pathelement location="../Libs/lwjgl-assimp.jar"/>
+        <pathelement location="../Libs/lwjgl-glfw.jar"/>
+        <pathelement location="../Libs/lwjgl-nanovg.jar"/>
+        <pathelement location="../Libs/lwjgl-openal.jar"/>
+        <pathelement location="../Libs/lwjgl-opengl.jar"/>
+        <pathelement location="../Libs/lwjgl-stb.jar"/>
+        <pathelement location="../Libs/natives/lwjgl-assimp-natives-windows.jar"/>
+        <pathelement location="../Libs/natives/lwjgl-glfw-natives-windows.jar"/>
+        <pathelement location="../Libs/natives/lwjgl-nanovg-natives-windows.jar"/>
+        <pathelement location="../Libs/natives/lwjgl-natives-windows.jar"/>
+        <pathelement location="../Libs/natives/lwjgl-openal-natives-windows.jar"/>
+        <pathelement location="../Libs/natives/lwjgl-opengl-natives-windows.jar"/>
+        <pathelement location="../Libs/natives/lwjgl-stb-natives-windows.jar"/>
+    </path>
+    <path id="Engine.classpath">
+        <pathelement location="${Engine.location}/bin"/>
+        <path refid="LWJGL.userclasspath"/>
+    </path>
+    <path id="TheChapter.classpath">
+        <pathelement location="bin"/>
+        <path refid="LWJGL.userclasspath"/>
+        <path refid="Engine.classpath"/>
+    </path>
+    <path id="run.Starter.classpath">
+        <path refid="TheChapter.classpath"/>
+        <path refid="LWJGL.userclasspath"/>
+        <path refid="Engine.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${Engine.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project,createScenarioJar" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${Engine.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="TheChapter.classpath"/>
+        </javac>
+    </target>
+	<target depends="build-refprojects" name="createScenarioJar">
+		<jar destfile="Resources/scenarios/TestScenario/TestScenario.jar" basedir="${TestScenario.location}/bin" />
+	</target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+        <ant antfile="build.xml" dir="${TestScenario.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${TestScenario.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Starter">
+        <java classname="game_logic.Starter" failonerror="true" fork="yes">
+            <classpath refid="run.Starter.classpath"/>
+        </java>
+    </target>
+</project>
