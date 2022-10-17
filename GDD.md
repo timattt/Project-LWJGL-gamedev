@@ -32,3 +32,24 @@
 * Взаимодействие с одним юнитом -> [сюда](https://drive.google.com/file/d/1EhJuemoHtvkaaPzQCk-Z2E2-hoH-mZXr/view?usp=sharing)
 * Крупное сражение на карте -> [сюда](https://drive.google.com/file/d/17PXtLe3wnGk6adKPmzLSv67v82kxCaAW/view?usp=sharing)
 * Карта высот (это чисто графическая вещь к игровому процессу мало отношения имеет) -> [сюда](https://drive.google.com/file/d/1cxorvWd5aQwcF3mUXrIAvq97XFT6zcc3/view?usp=sharing)
+
+## Новое поколение
+
+Теперь перейдем непосредственно к описанию того, что нам нужно сейчас.
+
+### Юнит - линейная пехота
+
+Этот тип солдатиков фигурирует во всех предыдущих версиях игры и представляют они из себя мушкетеров в мундирах цвета их фракции.
+(чаще всего красный)
+
+Все референсы по тому, что было в legacy можно найти [здесь](https://github.com/timattt/Project-LWJGL-gamedev/tree/master/TheChapter/RAW%20MODELS/Infantry).
+Там все либо в формате блендера, либо в .obj.
+
+Сейчас оно должно выглядеть как-то так:
+
+![image](https://user-images.githubusercontent.com/25401699/196192339-6b74507d-c688-47ee-aa93-24024940062d.png)
+
+![image](https://user-images.githubusercontent.com/25401699/196192454-fbe198f6-4360-4be8-84a6-0a72db3c987f.png)
+
+![image](https://user-images.githubusercontent.com/25401699/196192842-c35c40d2-54d2-4ced-a6a7-b920f96e95db.png)
+
