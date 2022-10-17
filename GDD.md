@@ -25,4 +25,10 @@
 ## LWJGL Legacy
 
 Следующей генерацией этой идеи стала реализация на LWJGL.
-Подробное описание с красивыми скриншотами и прочим обязательно к прочтению и находится [здесь](https://github.com/timattt/Project-LWJGL-gamedev).
+Подробное описание с красивыми скриншотами и прочим обязательно к прочтению и находится [здесь](https://github.com/timattt/Project-LWJGL-gamedev).   
+   
+Еще есть нескольких старых видео с игровым процессом. Они, к сожалению, не самого высокого качества, но тем не менее, позволяют понять суть.
+
+* Взаимодействие с одним юнитом -> [сюда](https://drive.google.com/file/d/1EhJuemoHtvkaaPzQCk-Z2E2-hoH-mZXr/view?usp=sharing)
+* Крупное сражение на карте -> [сюда](https://drive.google.com/file/d/17PXtLe3wnGk6adKPmzLSv67v82kxCaAW/view?usp=sharing)
+* Карта высот (это чисто графическая вещь к игровому процессу мало отношения имеет) -> [сюда](https://drive.google.com/file/d/1cxorvWd5aQwcF3mUXrIAvq97XFT6zcc3/view?usp=sharing)
