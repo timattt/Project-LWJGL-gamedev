@@ -160,6 +160,9 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/203410615-08fc0fac-9848-4f44-9345-3ae3ffc56ba9.png)
 
+![image](https://user-images.githubusercontent.com/25401699/204106984-3ef85c54-28f1-460f-b49f-5dcc9d3dedcd.png)
+
+
 * церковь
 
 ![image](https://user-images.githubusercontent.com/25401699/203410968-a103fc93-3bf1-4860-bc38-c0c26df53902.png)
