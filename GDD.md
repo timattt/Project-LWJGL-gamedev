@@ -152,6 +152,10 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/203413598-9ab2d718-ccff-4ec2-8069-53839d5ffbbc.png)
 
+## Юнит дирижабль
+
+![image](https://user-images.githubusercontent.com/25401699/205905756-0037553b-82a1-4fbe-8fd0-7a7ffb86702c.png)
+
 ## Строения
 
 Все тоже низкополигональное.
