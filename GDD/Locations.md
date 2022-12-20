@@ -12,6 +12,8 @@
 
 Выглядеть это все должно как-то так:
 
+![image](https://user-images.githubusercontent.com/25401699/208676418-c74f9e0e-887b-4d49-8662-bac78b89cadd.png)
+
 ![image](https://user-images.githubusercontent.com/25401699/206702764-ec6ca67c-63cd-4534-b598-243d8cceb6b4.png)
 
 ![image](https://user-images.githubusercontent.com/25401699/206702810-d9d90796-b421-4eec-a3a8-232f46e0dd94.png)
