@@ -62,3 +62,7 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/209852660-d57639a8-f2fc-47e4-8252-336c6a24c9dd.png)
 
+**Но ориентироваться надо вот на это:**
+
+![image](https://user-images.githubusercontent.com/25401699/209852954-1b76ed67-d5ce-465f-98ab-a5dd7d6c0d75.png)
+
