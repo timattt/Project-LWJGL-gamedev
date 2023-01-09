@@ -70,12 +70,13 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/209854682-b26ca59f-b9d3-4411-94d5-123f3a39f849.png)
 
-## TODO
+### Карта поселения
 
-- [ ] Сегмент стены: прямая линия
-- [ ] Сегмент стены: башня
-- [ ] Сегмент стены: ворота
-- [ ] Дворец
-- [ ] Дом 1
-- [ ] Дом 2
-- [ ] Дом 3
+Нужно нарисовать карту.
+Набросок был такой:
+
+![image](https://user-images.githubusercontent.com/25401699/211392929-22bf0876-50bd-4c54-b46d-e705489bca56.png)
+
+Референс:
+
+![image](https://user-images.githubusercontent.com/25401699/211393140-b4124c6e-4ed3-41fe-93a8-4edea4d97858.png)
