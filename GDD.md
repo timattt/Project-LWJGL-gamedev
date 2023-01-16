@@ -34,8 +34,8 @@
 - [x] Сегмент стены: ворота
 - [ ] Дворец
 - [x] Дом 1
-- [ ] Дом 2
-- [ ] Дом 3
+- [x] Дом 2
+- [x] Дом 3
 - [ ] закончить локацию 1
 - [ ] стрелец
 - [ ] гренадер (переделать)
@@ -43,7 +43,7 @@
 ## 2D
 
 - [ ] [Карта поселения](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/City.md)
-- [ ] [Арт казак](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Units.md#%D1%8E%D0%BD%D0%B8%D1%82---%D0%BA%D0%B0%D0%B7%D0%B0%D0%BA) - ориентироваться на уже готовую модель
+- [x] [Арт казак](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Units.md#%D1%8E%D0%BD%D0%B8%D1%82---%D0%BA%D0%B0%D0%B7%D0%B0%D0%BA) - ориентироваться на уже готовую модель
 - [ ] [Арт стрелец](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Units.md#%D1%8E%D0%BD%D0%B8%D1%82-%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%B5%D1%86)
 - [ ] [Арт гренадер](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Units.md#%D1%8E%D0%BD%D0%B8%D1%82-%D0%B3%D1%80%D0%B5%D0%BD%D0%B0%D0%B4%D0%B5%D1%80)
 
