@@ -24,3 +24,4 @@
 
 
 [**ПРО ГОРОДА**](https://github.com/timattt/Project-LWJGL-gamedev/blob/master/GDD/City.md)
+[**ПРО ФЕРМЫ**](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Farms.md)
