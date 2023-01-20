@@ -45,7 +45,7 @@
 
 ## 2D
 
-- [ ] [Карта поселения](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/City.md)
+- [x] [Карта поселения](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/City.md)
 - [x] [Арт казак](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Units.md#%D1%8E%D0%BD%D0%B8%D1%82---%D0%BA%D0%B0%D0%B7%D0%B0%D0%BA) - ориентироваться на уже готовую модель
 - [ ] [Арт стрелец](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Units.md#%D1%8E%D0%BD%D0%B8%D1%82-%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%B5%D1%86)
 - [ ] [Арт гренадер](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Units.md#%D1%8E%D0%BD%D0%B8%D1%82-%D0%B3%D1%80%D0%B5%D0%BD%D0%B0%D0%B4%D0%B5%D1%80)
