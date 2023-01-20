@@ -23,5 +23,6 @@
 ![image](https://user-images.githubusercontent.com/25401699/206702890-5cf7a9ee-e4ff-4727-bc05-6f5844678ff6.png)
 
 
-[**ПРО ГОРОДА**](https://github.com/timattt/Project-LWJGL-gamedev/blob/master/GDD/City.md)
-[**ПРО ФЕРМЫ**](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Farms.md)
+[**ПРО ГОРОДА**](https://github.com/timattt/Project-LWJGL-gamedev/blob/master/GDD/City.md)   
+[**ПРО ФЕРМЫ**](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Farms.md)   
+[**Про форты**](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Fort.md)
