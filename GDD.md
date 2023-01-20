@@ -36,8 +36,8 @@
 - [x] Дом 1
 - [x] Дом 2
 - [x] Дом 3
-- [ ] Ферма
-- [ ] Форт
+- [ ] [Ферма](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Farms.md)
+- [ ] [Форт](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Fort.md)
 - [ ] Раскраска острова
 - [ ] закончить локацию 1
 - [ ] стрелец
