@@ -32,3 +32,28 @@ Each artillery unit within a radius of 3 tiles gets +50% strength.
 Each farm within a radius of 20 cells simultaneously provides resources produced in 10 turns.
 
 Тут картинка такая - солдат в красном мундире читает свиток (внутри свитка неразборчивый текст и слово Order). На фоне другие солдаты несут мешки с зерном (на них написано Grain)
+
+### Thermal rocket
+
+All airships within a radius of 7 cells lose half of their health.
+
+![image](https://user-images.githubusercontent.com/25401699/213918787-426b673e-e48d-4a9b-88ff-7e99842cd22a.png)
+
+Из этой мортиры вылетает ракета - вокруг стоят красные мундиры. 
+На фоне в небе должны быть дирижабли.
+
+### Сombat operation
+
+All infantry units receive +2 movement points and +20% strength.
+
+Тут можно нарисовать лесную дорогу и строй красных мундиров с пушками, которые идут походным маршем по ней.
+
+### Barrage fire
+
+All artillery units within a radius of 5 cells gain +30% strength against wounded units.
+
+![image](https://user-images.githubusercontent.com/25401699/213919237-272a074e-2f1e-48aa-9ea2-39c8b7df3e28.png)
+
+Вот точно такую же картинку, только тут должен быть гренадер.
+
+### 
