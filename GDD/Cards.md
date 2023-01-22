@@ -56,4 +56,8 @@ All artillery units within a radius of 5 cells gain +30% strength against wounde
 
 Вот точно такую же картинку, только тут должен быть гренадер.
 
-### 
+### Guerrilla warfare
+
+Three militia units appear within a radius of three tiles.
+
+Тут надо нарисовать на фоне избу, и нескольких казаков, которые с ружьями на плечах уходят.
