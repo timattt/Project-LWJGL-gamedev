@@ -30,3 +30,5 @@ Each artillery unit within a radius of 3 tiles gets +50% strength.
 ### Food apportionment
 
 Each farm within a radius of 20 cells simultaneously provides resources produced in 10 turns.
+
+Тут картинка такая - солдат в красном мундире читает свиток (внутри свитка неразборчивый текст и слово Order). На фоне другие солдаты несут мешки с зерном (на них написано Grain)
