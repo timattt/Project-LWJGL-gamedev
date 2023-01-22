@@ -27,12 +27,6 @@ Each artillery unit within a radius of 3 tiles gets +50% strength.
 
 ![image](https://user-images.githubusercontent.com/25401699/213918020-96239ac7-e895-408c-a84d-dd96b83115b3.png)
 
-### Food apportionment
-
-Each farm within a radius of 20 cells simultaneously provides resources produced in 10 turns. But for the next 5 turns, these farms do not produce anything.
-
-Тут картинка такая - солдат в красном мундире читает свиток (внутри свитка неразборчивый текст и слово Order). На фоне другие солдаты несут мешки с зерном (на них написано Grain)
-
 ### Thermal rocket
 
 All airships within a radius of 7 cells lose half of their health.
@@ -68,4 +62,16 @@ A minefield explodes any land unit that is located at a distance of one cell.
 
 ![image](https://user-images.githubusercontent.com/25401699/213919710-c565422c-84be-40e8-a6f8-92065f93f285.png)
 
-### 
+## Приказы
+
+### Food apportionment
+
+Each farm within a radius of 20 cells simultaneously provides resources produced in 10 turns. But for the next 5 turns, these farms do not produce anything.
+
+Тут картинка такая - солдат в красном мундире читает свиток (внутри свитка неразборчивый текст и слово Order). На фоне другие солдаты несут мешки с зерном (на них написано Grain)
+
+### Industrialization
+
+All manufactories within a radius of 20 tiles receive a free building.
+
+Надо нарисовать стол, на нем свиток - на нем много текста (крупное слово Industry). Рядом лежит молоток и гаечный ключ.
