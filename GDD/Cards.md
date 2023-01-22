@@ -7,7 +7,22 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/213916450-2878e405-6061-43fc-b6fd-d5e02a989e2e.png)
 
+# ТЗ
+
+- [ ] Mobilization
+- [ ] Tactical retreat
+- [ ] Heavy artillery fire
+- [ ] Thermal rocket
+- [ ] Сombat operation
+- [ ] Barrage fire
+- [ ] Guerrilla warfare
+- [ ] Minefield
+- [ ] Food apportionment
+- [ ] Industrialization
+
 ## Военные карточки
+
+У таких карточек в верхнем левом углу должна иконка на серебряном фоне. Ружье со штыком перекрещенное с шашкой.
 
 ### Mobilization
 
@@ -63,6 +78,8 @@ A minefield explodes any land unit that is located at a distance of one cell.
 ![image](https://user-images.githubusercontent.com/25401699/213919710-c565422c-84be-40e8-a6f8-92065f93f285.png)
 
 ## Приказы
+
+У таких карточек в верхнем левом углу должна иконка со свитком на таком же серебряном фоне.
 
 ### Food apportionment
 
