@@ -7,19 +7,6 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/213916450-2878e405-6061-43fc-b6fd-d5e02a989e2e.png)
 
-# ТЗ
-
-- [ ] Mobilization
-- [ ] Tactical retreat
-- [ ] Heavy artillery fire
-- [ ] Thermal rocket
-- [ ] Сombat operation
-- [ ] Barrage fire
-- [ ] Guerrilla warfare
-- [ ] Minefield
-- [ ] Food apportionment
-- [ ] Industrialization
-
 ## Военные карточки
 
 У таких карточек в верхнем левом углу должна иконка на серебряном фоне. Ружье со штыком перекрещенное с шашкой.
