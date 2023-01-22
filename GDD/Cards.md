@@ -7,7 +7,7 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/213916450-2878e405-6061-43fc-b6fd-d5e02a989e2e.png)
 
-## Список
+## Военные карточки
 
 ### Mobilization
 
@@ -29,7 +29,7 @@ Each artillery unit within a radius of 3 tiles gets +50% strength.
 
 ### Food apportionment
 
-Each farm within a radius of 20 cells simultaneously provides resources produced in 10 turns.
+Each farm within a radius of 20 cells simultaneously provides resources produced in 10 turns. But for the next 5 turns, these farms do not produce anything.
 
 Тут картинка такая - солдат в красном мундире читает свиток (внутри свитка неразборчивый текст и слово Order). На фоне другие солдаты несут мешки с зерном (на них написано Grain)
 
@@ -61,3 +61,11 @@ All artillery units within a radius of 5 cells gain +30% strength against wounde
 Three militia units appear within a radius of three tiles.
 
 Тут надо нарисовать на фоне избу, и нескольких казаков, которые с ружьями на плечах уходят.
+
+### Minefield
+
+A minefield explodes any land unit that is located at a distance of one cell.
+
+![image](https://user-images.githubusercontent.com/25401699/213919710-c565422c-84be-40e8-a6f8-92065f93f285.png)
+
+### 
