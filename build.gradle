@@ -1,0 +1,59 @@
+import org.gradle.internal.os.OperatingSystem;
+
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0'
+// Папка, куда будет собираться проект
+def DEPLOY_DIR = 'deploy'
+def SCENARIO_RESOURCES_DIR = 'Resources/scenarios/TestScenario/Resources'
+def DEPLOY_TARGET_OS = ""
+def DEPLOY_TARGET_OS_ARCH = ""
+
+tasks.register('deploy_clean') {
+    print 'Cleaning deploy folder...\n'
+    project.delete(files("${DEPLOY_DIR}"))
+}
+
+tasks.register('deploy_mkdir') {
+    print 'Creating deploy folder...\n'
+    mkdir DEPLOY_DIR
+}
+
+tasks.register('deploy_copy_libs', Copy) {
+    print 'Copying libs to deploy folder...\n'
+    from layout.projectDirectory.dir("Libs")
+    into layout.projectDirectory.dir("${DEPLOY_DIR}/Libs")
+//    from layout.buildDirectory.dir("reports")
+//    into layout.buildDirectory.dir("toArchive")
+}
+
+tasks.register('deploy') {
+    dependsOn tasks.deploy_clean;
+    dependsOn tasks.deploy_mkdir;
+    dependsOn tasks.deploy_copy_libs;
+    dependsOn tasks.detect_deploy_target;
+}
+
+task detect_deploy_target {
+    doLast {
+        def operatingSystem = OperatingSystem.current()
+        if (operatingSystem.isWindows()) {
+            DEPLOY_TARGET_OS = "WINDOWS"
+        } else if (operatingSystem.isMacOsX()) {
+            DEPLOY_TARGET_OS = "MAC OS"
+        } else if (operatingSystem.isLinux()) {
+            DEPLOY_TARGET_OS = "LINUX"
+        } else {
+            DEPLOY_TARGET_OS = "UNKNOWN"
+        }
+        DEPLOY_TARGET_OS_ARCH = System.getProperty("os.arch")
+        println("Will build for: ${DEPLOY_TARGET_OS} ${DEPLOY_TARGET_OS_ARCH}")
+    }
+}
+
+repositories {
+    mavenCentral()
+}
