@@ -51,7 +51,7 @@
 - [x] [Арт гренадер](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Units.md#%D1%8E%D0%BD%D0%B8%D1%82-%D0%B3%D1%80%D0%B5%D0%BD%D0%B0%D0%B4%D0%B5%D1%80)
 - [x] [ДРУГОЕ](https://github.com/timattt/Tmp/blob/main/Articles/NoStepBack.md)
 - [x] Карта острова - вид сверху - как [тут](https://user-images.githubusercontent.com/25401699/206702764-ec6ca67c-63cd-4534-b598-243d8cceb6b4.png)
-- [ ] [арт с городом](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/City.md#%D0%B0%D1%80%D1%82%D1%8B)
+- [x] [арт с городом](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/City.md#%D0%B0%D1%80%D1%82%D1%8B)
 - [ ] Mobilization card
 - [ ] Tactical retreat card
 - [ ] Heavy artillery fire card
