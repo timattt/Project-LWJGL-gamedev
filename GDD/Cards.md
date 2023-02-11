@@ -31,7 +31,7 @@ Each artillery unit within a radius of 3 tiles gets +50% strength.
 
 ### Thermal rocket
 
-All airships within a radius of 7 cells lose half of their health.
+All airships within a radius of 7 tiles lose half of their health.
 
 ![image](https://user-images.githubusercontent.com/25401699/213918787-426b673e-e48d-4a9b-88ff-7e99842cd22a.png)
 
@@ -46,7 +46,7 @@ All infantry units receive +2 movement points and +20% strength.
 
 ### Barrage fire
 
-All artillery units within a radius of 5 cells gain +30% strength against wounded units.
+All artillery units within a radius of 5 tiles gain +30% strength against wounded units.
 
 ![image](https://user-images.githubusercontent.com/25401699/213919237-272a074e-2f1e-48aa-9ea2-39c8b7df3e28.png)
 
@@ -60,7 +60,7 @@ Three militia units appear within a radius of three tiles.
 
 ### Minefield
 
-A minefield explodes any land unit that is located at a distance of one cell.
+A minefield explodes any land unit that is located at a distance of one tile.
 
 ![image](https://user-images.githubusercontent.com/25401699/213919710-c565422c-84be-40e8-a6f8-92065f93f285.png)
 
@@ -70,7 +70,7 @@ A minefield explodes any land unit that is located at a distance of one cell.
 
 ### Food apportionment
 
-Each farm within a radius of 20 cells simultaneously provides resources produced in 10 turns. But for the next 5 turns, these farms do not produce anything.
+Each farm within a radius of 20 tiles simultaneously provides resources produced in 10 turns. But for the next 5 turns, these farms do not produce anything.
 
 Тут картинка такая - солдат в красном мундире читает свиток (внутри свитка неразборчивый текст и слово Order). На фоне другие солдаты несут мешки с зерном (на них написано Grain)
 
