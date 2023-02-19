@@ -39,10 +39,10 @@
 - [x] Дом 3
 - [x] [Ферма](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Farms.md)
 - [x] [Форт](https://github.com/timattt/TheChapterLegacy/blob/master/GDD/Fort.md)
-- [ ] Раскраска острова
-- [ ] закончить локацию 1
-- [ ] стрелец
-- [ ] гренадер (переделать)
+- [x] Раскраска острова
+- [x] закончить локацию 1
+- [x] стрелец
+- [x] гренадер (переделать)
 
 ## 2D
 
