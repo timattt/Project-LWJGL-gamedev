@@ -45,11 +45,12 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/220086132-4c71e327-0a3c-4745-8b06-1331d9a11f59.png)
 
-![image](https://user-images.githubusercontent.com/25401699/220086215-acee5b93-e71f-49b5-bd8e-3efe685372e4.png)
+![image](https://user-images.githubusercontent.com/25401699/220086174-1d08702a-7e3f-4a7a-9cb3-7522d663d265.png)
 
 ### Дамба
 
-![image](https://user-images.githubusercontent.com/25401699/220086174-1d08702a-7e3f-4a7a-9cb3-7522d663d265.png)
+![image](https://user-images.githubusercontent.com/25401699/220086215-acee5b93-e71f-49b5-bd8e-3efe685372e4.png)
+
 
 ![image](https://user-images.githubusercontent.com/25401699/220086253-750f7b29-f311-4e46-9d33-bb16e90f3a2b.png)
 
