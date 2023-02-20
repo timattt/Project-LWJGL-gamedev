@@ -9,6 +9,15 @@
 * дирижабль
 * конногвардеец
 * стрелец
+* доппельзольднер
+
+
+### Юнит - доппельзольднер
+
+![image](https://user-images.githubusercontent.com/25401699/220087460-2aea3c3c-abec-4d51-8073-5bafcba4a25a.png)
+
+![image](https://user-images.githubusercontent.com/25401699/220087657-a45db29d-d3f5-4141-a89a-0f56fcfb7863.png)
+
 
 ### Юнит - линейная пехота
 
