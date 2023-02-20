@@ -33,12 +33,24 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/206702890-5cf7a9ee-e4ff-4727-bc05-6f5844678ff6.png)
 
+Тут как бы два острова наслаиваются друг на друга.
 
-Тут добавлены две новые структуры: гигантские деревья и дамбы.
+![image](https://user-images.githubusercontent.com/25401699/220086003-92504568-69e3-4f9b-9b54-98daf7034480.png)
+
+
+Тут добавлены три новые структуры: гигантские деревья, дамбы и крепости на гигантских деревьях.
 Каждая из них занимает ОДНУ клетку
 
 ### Гигантское дерево
 
+![image](https://user-images.githubusercontent.com/25401699/220086132-4c71e327-0a3c-4745-8b06-1331d9a11f59.png)
 
+![image](https://user-images.githubusercontent.com/25401699/220086215-acee5b93-e71f-49b5-bd8e-3efe685372e4.png)
 
 ### Дамба
+
+![image](https://user-images.githubusercontent.com/25401699/220086174-1d08702a-7e3f-4a7a-9cb3-7522d663d265.png)
+
+![image](https://user-images.githubusercontent.com/25401699/220086253-750f7b29-f311-4e46-9d33-bb16e90f3a2b.png)
+
+
