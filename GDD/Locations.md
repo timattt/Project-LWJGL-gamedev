@@ -47,6 +47,12 @@
 
 ![image](https://user-images.githubusercontent.com/25401699/220086174-1d08702a-7e3f-4a7a-9cb3-7522d663d265.png)
 
+### Укрепленное гигантское дерево
+
+![image](https://user-images.githubusercontent.com/25401699/221409210-afa73823-054f-422b-b49b-98f604b9d6a4.png)
+
+![image](https://user-images.githubusercontent.com/25401699/221409248-294353cd-ca21-47f6-9bb0-c829a9f67a89.png)
+
 ### Дамба
 
 ![image](https://user-images.githubusercontent.com/25401699/220086215-acee5b93-e71f-49b5-bd8e-3efe685372e4.png)
